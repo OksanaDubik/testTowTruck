@@ -1,0 +1,489 @@
+.form__desk {
+    width: 100vw;
+}
+
+.form__desk > .container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.form__desk > .container pre {
+    font-family: var(--regular);
+    font-size: 26px;
+    color: var(--dark);
+    margin: 0 0 0 -105px;
+}
+
+
+.form__desk > .container span {
+    font-family: var(--semibold);
+    font-size: 26px;
+    color: var(--dark);
+}
+
+.hide {
+    display: none;
+    font-family: var(--regular);
+    font-size: 26px;
+    color: var(--dark);
+    margin: 0 0 0 -105px;
+}
+
+.container__form {
+    padding: 0 29vw;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__input label, .city, #city, .form__input-checkbox label {
+    font-family: var(--regular);
+    font-size: 22px;
+    color: #4a585e;
+    padding: 28px 0 12px 0;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.form__input input {
+    padding: 14px 24px 10px 24px;
+}
+
+.form__input input, .select-selected, .select-hide div, textarea {
+    border: 0.50px solid var(--main-blue);
+    border-radius: 10px;
+    height: auto;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.select-hide div, .select-selected {
+    padding: 11px 48px 12px 24px;
+}
+
+textarea {
+    padding: 11px 48px 0 24px;
+}
+
+
+.select-selected {
+    background-image: url(../images/icons/arrowForm.svg);
+    background-position-x: 98%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    font-family: var(--regular);
+    font-size: 26px;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+}
+
+.select-items {
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+.select-items div {
+    padding: 10px;
+    cursor: pointer;
+    font-family: var(--regular);
+    font-size: 26px;
+    color: var(--dark);
+}
+
+.select-items div:hover {
+    background-color: #f1f1f1;
+}
+
+.select-hide {
+    display: block;
+    width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: var(--regular);
+    font-size: 26px;
+    color: #b3c8d1;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: var(--main-blue);
+    width: 100%;
+    margin: 68.5px 0;
+}
+
+.form__txt h3 {
+    font-family: var(--regular);
+    font-size: 26px;
+    color: #4a585e;
+    padding: 0 20px;
+}
+
+.form__txt {
+    background: #F3F6F9;
+    margin-top: -111.5px;
+    width: fit-content;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**form__input-checkbox**/
+.input-text, .input__checkbox {
+    display: flex;
+    align-items: center;
+
+}
+
+.input__checkbox {
+    margin: 12px 0 28px;
+}
+
+.input-text input {
+    border: 0.50px solid var(--main-blue);
+    border-radius: 10px;
+    padding: 11px 24px 12px 24px;
+    width: 14vw;
+    background: #fff;
+}
+
+.input-text p {
+    font-family: var(--regular);
+    font-size: 22px;
+    color: #4a585e;
+    margin: 0 5vw 0 16px;
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    padding: 0;
+}
+
+.checkbox + label::before {
+    content: '';
+    display: inline-block;
+    border: 0.50px solid var(--main-blue);
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    margin-right: 12px;
+}
+
+.checkbox::before {
+    margin-left: 12px;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.checkbox:checked + label::before,
+.checkbox__agree:checked + label::before {
+    background: url("../images/icons/checkbox.svg");
+    background-size: 14px 8px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+/***********************************/
+.input__file {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+.label__file {
+    display: inline-flex;
+    align-items: flex-start;
+    user-select: none;
+    padding: 0;
+    flex-direction: column;
+    font-family: var(--regular);
+    font-size: 22px;
+    color: #4a585e;
+}
+
+.label__file::after {
+    content: "ЗАГРУЗИТЬ";
+    border: 2px solid var(--main-blue);
+    border-radius: 50px;
+    padding: 16px 36px;
+    width: 335px;
+    height: 56px;
+    margin-top: 12px;
+    font-family: var(--medium);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--main-blue);
+    text-align: center;
+    align-content: center;
+}
+
+.agree {
+    margin-top: 60px;
+}
+
+.checkbox__agree {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin-left: -40px;
+    width: 30px;
+    height: 30px;
+}
+
+.agree label {
+    font-family: var(--regular);
+    font-size: 22px;
+    color: #4a585e;
+}
+
+.agree label::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 0.50px solid var(--main-blue);
+    border-radius: 4px;
+    background: #ffffff;
+    margin-left: -40px;
+}
+
+
+.btn-form {
+    margin: 24px 0 0 30%;
+}
+
+/*адаптивность**/
+@media screen and (max-width: 1440px) {
+    .container__form {
+        padding: 0 18vw;
+    }
+
+    .input-text input {
+        width: 23vw;
+    }
+
+    .input__checkbox {
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .form__desk > .container pre {
+        font-size: 22px;
+        margin: 0 0 0 -105px;
+    }
+
+    .form__desk > .container span {
+        font-size: 23px;
+    }
+
+    .form__desk > .container img {
+        margin-top: -10px;
+        width: 104px;
+    }
+
+    .form__desk > .container {
+        justify-content: center;
+    }
+
+    .form__input label, .city, #city, .form__input-checkbox label, .input-text p {;
+        font-size: 16px;
+    }
+
+    .form__input label, .city, .form__input-checkbox label {
+        padding: 20px 0 9px 0;
+    }
+
+    #city {
+        padding: 0 0 7px 0;
+    }
+
+    input::placeholder, textarea::placeholder, .select-selected {
+        font-size: 18px;
+    }
+
+    .input__checkbox {
+        margin: 0 0 12px;
+    }
+
+    .label__file {
+        font-size: 18px;
+        padding-top: 26px;
+    }
+
+    .form__txt {
+        margin-top: -102px;
+    }
+
+    .form__txt h3 {
+        font-size: 20px;
+    }
+
+    .label__file::after {
+        padding: 12px 36px;
+        width: 275px;
+        height: 20px;
+        margin-top: 12px;
+        font-size: 20px;
+    }
+
+    .agree label {
+        font-size: 18px;
+    }
+
+    .agree label {
+        margin-left: 40px;
+    }
+
+    .form__input input, .select-selected, .select-hide div, textarea, .input-text input {
+        padding: 7px 24px 7px 23px;
+    }
+
+    .checkbox + label::before, .agree label::before {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .form__desk > .container pre {
+        font-size: 18px;
+        margin: 0 0 0 -80px;
+    }
+
+    .form__desk > .container span {
+        font-size: 19px;
+    }
+
+    .btn-form {
+        padding: 5px;
+    }
+
+    .label__file::after {
+        font-size: 16px;
+        width: 23vw;
+        padding: 12px 22px;
+    }
+
+    .form__txt h3 {
+        font-size: 18px;
+    }
+
+    .form__txt {
+        margin-top: -96px;
+    }
+
+    .btn-form {
+        margin: 24px 0 0 40%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .form__desk > .container {
+        justify-content: flex-start;
+        padding: 0 1.5vw;
+    }
+
+    .form__desk > .container img {
+        width: 10vw;
+    }
+
+    .form__desk > .container pre {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+        font-size: 15px;
+        margin: 0 10px 0 7px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    #deskColl {
+        height: 200px;
+    }
+
+    .checkbox + label::before {
+        width: 32px;
+    }
+
+    .checkbox {
+        margin-top: 10px;
+    }
+
+    .checkbox__agree {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .agree label {
+        font-size: 12px;
+    }
+
+    .container__form {
+        padding: 0 8vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .btn-form {
+        margin: 23px 0 0 18%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container__form {
+        padding: 0 2vw;
+    }
+
+    .input-text p {
+        font-size: 18px;
+        margin: 0 3vw 0 4px;
+    }
+    .label__file::after {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
