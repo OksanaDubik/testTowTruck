@@ -24,9 +24,7 @@
         </div>
     </div>
 </header>
-<button class="arrowUp">
-    <a href="#header"><img src="images/icons/arrowUp.svg" alt="вверх"></a>
-</button>
+<a href="#header" class="arrowUp"><img src="images/icons/arrowUp.svg" alt="вверх"></a>
 <main>
     <section class="banner form__banner">
         <h1>Создание объявления</h1>
@@ -58,20 +56,20 @@
                         <div>Омск</div>
                     </div>
                 </div>
-
             </div>
-
             <div class="form__input">
                 <label for="name">Ваше имя</label>
                 <input id="name" type="text" name="name">
             </div>
             <div class="form__input">
                 <label for="phone">Номер мобильного телефона</label>
-                <input id="phone" type="tel" name="tel" pattern="^\+7 \(\d{3}\) \d{3} \d{2} \d{2}$" placeholder="+7 (999) 999 99 99">
+                <input id="phone" type="tel" name="tel" pattern="^\+7 \(\d{3}\) \d{3} \d{2} \d{2}$"
+                       placeholder="+7 (999) 999 99 99">
             </div>
             <div class="form__input">
                 <label for="phoneCity">Номер городского телефона</label>
-                <input id="phoneCity" type="tel" name="telCity" pattern="^\+7 \(\d{3}\) \d{3} \d{2} \d{2}$" placeholder="+7 (999) 999 99 99">
+                <input id="phoneCity" type="tel" name="telCity" pattern="^\+7 \(\d{3}\) \d{3} \d{2} \d{2}$"
+                       placeholder="+7 (999) 999 99 99">
             </div>
             <div class="form__input">
                 <label for="email">Ваш email</label>
@@ -93,11 +91,11 @@
         <div class="container__form">
             <div class="form__input">
                 <label for="head">Заголовок объявления</label>
-                <textarea id="head" type="text" name="head" maxlength="50" placeholder="Не более 50 символов"></textarea>
+                <textarea id="head" name="head" maxlength="50" placeholder="Не более 50 символов"></textarea>
             </div>
             <div class="form__input">
                 <label for="deskColl">Описание объявления</label>
-                <textarea id="deskColl" type="text" name="desk" maxlength="50" placeholder="Не более 50 символов"
+                <textarea id="deskColl" name="desk" maxlength="50" placeholder="Не более 50 символов"
                           rows="20"></textarea>
             </div>
         </div>
@@ -109,37 +107,30 @@
                 </div>
             </div>
         </div>
-
         <div class="container__form">
             <div class="form__input-checkbox">
                 <label for="input1">Легковые автомобили</label>
                 <div class="input__checkbox">
                     <div class="form__input-text">
                         <div class="input-text">
-                            <input id="input1" type="number" name="price1" data-type = "input">
+                            <input id="input1" type="number" name="price1" data-type="input">
                             <p>рублей</p>
                         </div>
-
                     </div>
                     <div class="form__input-checked">
-
                         <input id="check1" type="checkbox" name="check1" class="checkbox" data-type="checkbox">
                         <label for="check1">Услугу не оказываю</label>
                     </div>
-
                 </div>
                 <label for="input2">Мототехника</label>
                 <div class="input__checkbox">
                     <div class="form__input-text">
-
                         <div class="input-text">
-                            <input id="input2" type="number" name="rice2" data-type = "input">
+                            <input id="input2" type="number" name="rice2" data-type="input">
                             <p>рублей</p>
                         </div>
-
                     </div>
                     <div class="form__input-checked">
-
                         <input id="check2" type="checkbox" name="check2" class="checkbox" data-type="checkbox">
                         <label for="check2">Услугу не оказываю</label>
                     </div>
@@ -147,15 +138,12 @@
                 <label for="input3">Внедорожник</label>
                 <div class="input__checkbox">
                     <div class="form__input-text">
-
                         <div class="input-text">
-                            <input id="input3" type="number" name="price3" data-type = "input">
+                            <input id="input3" type="number" name="price3" data-type="input">
                             <p>рублей</p>
                         </div>
-
                     </div>
                     <div class="form__input-checked">
-
                         <input id="check3" type="checkbox" name="check3" class="checkbox" data-type="checkbox">
                         <label for="check3">Услугу не оказываю</label>
                     </div>
@@ -163,15 +151,12 @@
                 <label for="input4">Микроавтобус</label>
                 <div class="input__checkbox">
                     <div class="form__input-text">
-
                         <div class="input-text">
-                            <input id="input4" type="number" name="price4" data-type = "input">
+                            <input id="input4" type="number" name="price4" data-type="input">
                             <p>рублей</p>
                         </div>
-
                     </div>
                     <div class="form__input-checked">
-
                         <input id="check4" type="checkbox" name="check4" class="checkbox" data-type="checkbox">
                         <label for="check4">Услугу не оказываю</label>
                     </div>
@@ -180,35 +165,29 @@
                 <div class="input__checkbox">
                     <div class="form__input-text">
                         <div class="input-text">
-                            <input id="input5" type="number" name="price5" data-type = "input">
+                            <input id="input5" type="number" name="price5" data-type="input">
                             <p>рублей</p>
                         </div>
 
                     </div>
                     <div class="form__input-checked">
-
                         <input id="check5" type="checkbox" name="check5" class="checkbox" data-type="checkbox">
                         <label for="check5">Услугу не оказываю</label>
                     </div>
                 </div>
-
             </div>
             <label class="label__file" for="inpBord">Прикрепите фотографию к объявлению</label>
-            <input id="inpBord" type="file" name="photo" class="input__file" accept="image/*,image/jpeg"
-                   placeholder="Загрузить" value="Загрузить">
+            <input id="inpBord" type="file" name="photo" class="input__file" accept="image/*,image/jpeg">
             <div class="agree">
                 <input id="agree" type="checkbox" name="agree" class="checkbox__agree">
-                <label for="agree">Я&nbsp;соглашаюсь с&nbsp; правилами использования сервиса, а&nbsp;также с&nbsp;передачей и&nbsp;обработкой
+                <label for="agree">Я&nbsp;соглашаюсь с&nbsp; правилами использования сервиса, а&nbsp;также с&nbsp;передачей
+                    и&nbsp;обработкой
                     моих данных в&nbsp;evarus.ru. Я&nbsp;подтверждаю своё совершеннолетие и&nbsp;ответственность за&nbsp;размещение.</label>
             </div>
-            <button class="btn btn-form" >Продолжить</button>
+            <button class="btn btn-form">Продолжить</button>
         </div>
-
-
     </form>
 </main>
-
-
 <footer>
     <div class="container">
         <img src="images/icons/logo.svg" alt="логотип">
@@ -220,7 +199,6 @@
             <a href="">Защита персональных данных</a>
         </nav>
     </div>
-
 </footer>
 <script src="JS/select.js"></script>
 <script src="JS/formValidation.js"></script>

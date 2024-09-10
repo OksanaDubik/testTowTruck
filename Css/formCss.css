@@ -40,7 +40,9 @@
     width: 100%;
 }
 
-.form__input label, .city, #city, .form__input-checkbox label {
+.form__input label,
+.city, #city,
+.form__input-checkbox label {
     font-family: var(--regular);
     font-size: 22px;
     color: #4a585e;
@@ -55,7 +57,10 @@
     padding: 14px 24px 10px 24px;
 }
 
-.form__input input, .select-selected, .select-hide div, textarea {
+.form__input input,
+.select-selected,
+.select-hide div,
+textarea {
     border: 0.50px solid var(--main-blue);
     border-radius: 10px;
     height: auto;
@@ -63,14 +68,14 @@
     cursor: pointer;
 }
 
-.select-hide div, .select-selected {
+.select-hide div,
+.select-selected {
     padding: 11px 48px 12px 24px;
 }
 
 textarea {
     padding: 11px 48px 0 24px;
 }
-
 
 .select-selected {
     background-image: url(../images/icons/arrowForm.svg);
@@ -107,7 +112,8 @@ textarea {
     width: 100%;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     font-family: var(--regular);
     font-size: 26px;
     color: #b3c8d1;
@@ -144,7 +150,6 @@ hr {
 .input-text, .input__checkbox {
     display: flex;
     align-items: center;
-
 }
 
 .input__checkbox {
@@ -312,11 +317,16 @@ hr {
         justify-content: center;
     }
 
-    .form__input label, .city, #city, .form__input-checkbox label, .input-text p {;
+    .form__input label,
+    .city, #city,
+    .form__input-checkbox label,
+    .input-text p {;
         font-size: 16px;
     }
 
-    .form__input label, .city, .form__input-checkbox label {
+    .form__input label,
+    .city,
+    .form__input-checkbox label {
         padding: 20px 0 9px 0;
     }
 
@@ -324,7 +334,9 @@ hr {
         padding: 0 0 7px 0;
     }
 
-    input::placeholder, textarea::placeholder, .select-selected {
+    input::placeholder,
+    textarea::placeholder,
+    .select-selected {
         font-size: 18px;
     }
 
@@ -361,11 +373,16 @@ hr {
         margin-left: 40px;
     }
 
-    .form__input input, .select-selected, .select-hide div, textarea, .input-text input {
+    .form__input input,
+    .select-selected,
+    .select-hide div,
+    textarea,
+    .input-text input {
         padding: 7px 24px 7px 23px;
     }
 
-    .checkbox + label::before, .agree label::before {
+    .checkbox + label::before,
+    .agree label::before {
         width: 20px;
         height: 20px;
     }
@@ -403,7 +420,6 @@ hr {
     .btn-form {
         margin: 24px 0 0 40%;
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -470,6 +486,7 @@ hr {
         font-size: 18px;
         margin: 0 3vw 0 4px;
     }
+
     .label__file::after {
         font-size: 13px;
     }
